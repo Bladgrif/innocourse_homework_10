@@ -8,6 +8,7 @@ repositories {
 
 dependencies {
     testImplementation(
+            "io.github.bonigarcia:webdrivermanager:4.4.3",
             "com.codeborne:selenide:6.16.0",
             "org.junit.jupiter:junit-jupiter:5.9.3",
             "io.rest-assured:rest-assured:5.4.0",
