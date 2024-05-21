@@ -17,10 +17,10 @@ public class Taks_01 {
 //        WebDriver driver = new ChromeDriver();
 //        driver.get("https://the-internet.herokuapp.com/javascript_alerts");
         // WebDriver
-        WebDriverManager.chromedriver().browserVersion("114").setup();
-        WebDriver browser = new ChromeDriver();
-        browser.get("https://habr.ru");
-        browser.quit();
+//        WebDriverManager.chromedriver().browserVersion("114").setup();
+//        WebDriver browser = new ChromeDriver();
+//        browser.get("https://habr.ru");
+//        browser.quit();
 //        // WebElement
 //        browser.quit();
 //        Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
@@ -31,10 +31,10 @@ public class Taks_01 {
     @Test
     public void userCanLoginByUsername() {
 //        WebDriverManager.chromedriver().browserVersion("114").setup();
-//        open("/login");
-//        $(By.name("user.name")).setValue("johny");
-//        $("#submit").click();
-//        $(".loading_progress").should(disappear); // Само подождёт, пока элемент исчезнет
-//        $("#username").shouldHave(text("Hello, Johny!")); // Само подождёт, пока у элемента появится нужный текст
+        open("/login");
+        $(By.name("user.name")).setValue("johny");
+        $("#submit").click();
+        $(".loading_progress").should(disappear); // Само подождёт, пока элемент исчезнет
+        $("#username").shouldHave(text("Hello, Johny!")); // Само подождёт, пока у элемента появится нужный текст
     }
 }
